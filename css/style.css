@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    max-width: 1850px;
+  }
+
+  header{
+    max-width: 1850px;
+    background-color: #f8f2f0;
+    width: 70%;
+    height: 95px;
+    z-index: 100;
+    position: fixed;
+    left: 15%;
+  }
+
+  body {
+    max-width: 1850px;
+    margin: 0 auto; /* căn giữa nội dung */
+    height: auto;
+  }
+
+  
+
+
+/* -------------------------------------------------header------------------------------------------- */
+  header nav ul a img{
+    height: 80px;
+  }
+
+  header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  header nav ul li a{
+    text-decoration: none;
+    float: right;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 35px;
+    padding-left: 50px;
+  }
+
+  header nav ul li a::after{
+    content: ''; /* Thêm nội dung vào phần tử sau */
+    position: absolute; /* Thiết lập vị trí tuyệt đối để hiển thị gạch ngang */
+    right: 0;
+    bottom: -2px; /* Đặt vị trí bên dưới link */
+    width: 60%;
+    height: 1px; /* Độ dày của gạch ngang */
+    background-color: #000; /* Màu sắc của gạch ngang */
+    transform: scaleX(0); /* Đặt chiều rộng của gạch ngang ban đầu là 0 */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển động */
+  }
+
+  header nav ul li a:hover::after {
+    transform: scaleX(1); 
+    /* Mở rộng chiều rộng của gạch ngang khi chuột hover */
+  }
+
+  header nav ul li a:hover{
+    color: #701515;
+  }
+  
+  header nav ul  a button{
+    background-color: #794F2A;
+    width: 90px;
+    height: 90px;
+    margin-left: 70px;
+    color: white;
+    cursor: pointer;
+  }
+
+  header nav ul  a button:hover{
+    background-color: #701515;
+    color: snow;
+  }
+
+  /* ------------------------------------- body2------------------------ */
+  #body-2{
+    max-width: 1850px;
+    max-height: 380px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg-body2{
+    width: 60%;
+    height: 370px;
+    display: flex;
+  }
+  
+  .bg-body2 img{
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+/* -----------------------banner-3-------------------------------------------------------- */
+#body-3{
+  max-width: 1850px;
+  max-height: 250px;
+  height: 400px;
+  background-image: url(../Images/banner\ timhieu.png);
+  background-size: cover;
+  background-position: top;
+} 
+
+.text-body3{
+  display: block;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.text-body3 a button{
+  width: 250px;
+  height: 50px;
+  font-size: 15px;
+  color: #cf2e2e;
+  border: 2px solid #cf2e2e;
+  font-weight: bold;
+}
+
+.text-body3 a button:hover{
+  color: #701515;
+  border-color:#701515 ;
+}
+
+.text-body3 h2{
+  font-size: 33px;
+  padding-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #c32020;
+}
+
+
+/* -----------------------------------------BodyThứ4-------------------------------------------- */
+
+.body-4{
+  margin-top: 22px;
+  width: auto;
+  height: 760px;
+  background-color: rgb(255, 245, 245);
+  position: relative;
+}
+
+
+.item-tea{
+  position: absolute;
+  z-index: 1;
+  max-width: 410px;
+  max-height: 900px;
+  width: auto;
+  top: 100px;
+  left: 150px;
+}
+
+.item-tea p{
+  position: absolute;
+  left: 100px ;
+  width: auto;
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #cf2e2e;
+  font-weight: bold;
+}
+
+.item-tea img{
+  width: 80%;
+  height: 80%;
+}
+
+.text-tea{
+  position: absolute;
+  z-index: 1;
+  max-width: 800px;
+  max-height: 900px;
+  top: 170px;
+  left: 590px;
+  width: auto;
+}
+
+.text-tea h2{
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #c32020;
+  width: auto;
+}
+
+.text-tea p{
+  font-family: 'Courier New', Courier, monospace;
+  color: #000;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.text-tea button{
+   width: 210px;
+   height: 50px;
+   font-size: 15px;
+   color: #cf2e2e;
+   border: 2px solid #cf2e2e;
+   border-radius: 10px;
+   font-weight: bold;
+   background-color:rgb(255, 245, 245);
+}
+
+.text-tea button:hover{
+  color: #701515;
+  border-color: #701515;
+}
+.img-tea{
+  display: flex;
+  padding-top: 50px;
+  position: absolute;
+  z-index: 1;
+  max-width: 500px;
+  max-height: 245px;
+
+}
+.img-tea img{
+  width: 400px;
+  height: 360px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------fotter---------------------------------------------- */
+  footer{
+    justify-content: center;
+    max-width: 1850px;
+    display: grid;
+    grid-template-columns: 34% 66%;
+  }
+
+  .fot1{
+    background-color: #794F2A;
+    height: 140px;
+    margin-top: 22px;
+    display: inline-block;
+  }
+
+  .fot1 h2{
+    font-size: 30px;
+    color: rgb(243, 238, 238);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 120px;
+    margin-top: 33px;
+  }
+
+.fot1 img{
+  margin-left: 15px;
+  height: 25px;
+  margin-top: 40px;
+}
+.img-h2{
+  display: flex;
+}
+
+  .fot1 p{
+    font-size: 12px;
+    color:rgb(243, 238, 238) ;
+    margin-left: 140px;
+  }
+
+  .fot2{
+    background-color:rgb(241, 235, 235);
+    height: 140px;
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .fot2 ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    bottom: 20px;
+
+  }
+
+  .fot2 ul li a{
+    text-decoration: none;
+  
+    float: left;
+    padding-left: 20px;
+    border-left: 2px solid black;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: black;
+  }
+
+  .fot2 ul li a:hover{
+    color: #701515;
+  }
+
+
+.fot2 ul li p a{
+  border: none;
+}
+
+
+.timcuahang{
+  position: relative;
+  padding-left: 90px;
+  top: 10px;
+}
+
+.timcuahang button{
+  color: white;
+  background-color: #c32020;
+  width: 200px;
+  height: 50px;
+}
+
+.timcuahang button:hover{
+  background-color: #701515;
+}
+
+
+
